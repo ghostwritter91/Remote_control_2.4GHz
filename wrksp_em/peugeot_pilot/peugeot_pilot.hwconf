@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ASCII"?>
+<device:XMLDevice xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:device="http://www.silabs.com/sls/hc/document/device.ecore" name="EFM32ZG110F32" partId="com.silabs.mcu.si32.efm32.efm32zg.efm32zg110f32">
+  <mode name="DefaultMode">
+    <property object="DefaultMode" propertyId="mode.diagramLocation" value="100, 100"/>
+    <property object="GPIO" propertyId="ABPeripheral.included" value="true"/>
+    <property object="GPIO" propertyId="gpio.settings.em4wu0" value="Wake-up from EM4 when pin is low"/>
+    <property object="GPIO" propertyId="gpio.settings.em4wu4" value="Wake-up from EM4 when pin is low"/>
+    <property object="PA0" propertyId="ports.settings.custompinname" value="BTN_OPEN"/>
+    <property object="PA0" propertyId="ports.settings.dout" value="1"/>
+    <property object="PA0" propertyId="ports.settings.filter" value="Enabled"/>
+    <property object="PA0" propertyId="ports.settings.pinmode" value="Input"/>
+    <property object="PA0" propertyId="ports.settings.pulldirection" value="Pullup"/>
+    <property object="PA0" propertyId="ports.settings.pullup" value="Enabled"/>
+    <property object="PB11" propertyId="ports.settings.custompinname" value="NRF_SPI_SOFT_CSN"/>
+    <property object="PB11" propertyId="ports.settings.dout" value="1"/>
+    <property object="PB11" propertyId="ports.settings.filter" value="Enabled"/>
+    <property object="PB11" propertyId="ports.settings.pinmode" value="Push-pull"/>
+    <property object="PB11" propertyId="ports.settings.pulldirection" value="Pullup"/>
+    <property object="PB11" propertyId="ports.settings.pullup" value="Enabled"/>
+    <property object="PB13" propertyId="ports.settings.custompinname" value="NRF_IRQ"/>
+    <property object="PB13" propertyId="ports.settings.dout" value="1"/>
+    <property object="PB13" propertyId="ports.settings.filter" value="Enabled"/>
+    <property object="PB13" propertyId="ports.settings.pinmode" value="Input"/>
+    <property object="PB13" propertyId="ports.settings.pulldirection" value="Pullup"/>
+    <property object="PB13" propertyId="ports.settings.pullup" value="Enabled"/>
+    <property object="PB14" propertyId="ports.settings.custompinname" value="NRF_CE"/>
+    <property object="PB14" propertyId="ports.settings.pinmode" value="Push-pull"/>
+    <property object="PB7" propertyId="ports.settings.custompinname" value="NRF_SPI_CLK"/>
+    <property object="PB7" propertyId="ports.settings.pinmode" value="Push-pull"/>
+    <property object="PB8" propertyId="ports.settings.custompinname" value="NC_6"/>
+    <property object="PB8" propertyId="ports.settings.pinmode" value="Input pull"/>
+    <property object="PC0" propertyId="ports.settings.custompinname" value="NRF_SPI_MOSI"/>
+    <property object="PC0" propertyId="ports.settings.pinmode" value="Push-pull"/>
+    <property object="PC1" propertyId="ports.settings.custompinname" value="NRF_SPI_MISO"/>
+    <property object="PC1" propertyId="ports.settings.pinmode" value="Input"/>
+    <property object="PC14" propertyId="ports.settings.custompinname" value="LED_GREEN"/>
+    <property object="PC14" propertyId="ports.settings.pinmode" value="Push-pull"/>
+    <property object="PC15" propertyId="ports.settings.custompinname" value="LED_RED"/>
+    <property object="PC15" propertyId="ports.settings.pinmode" value="Push-pull"/>
+    <property object="PD6" propertyId="ports.settings.custompinname" value="NC_13"/>
+    <property object="PD6" propertyId="ports.settings.pinmode" value="Input pull"/>
+    <property object="PD7" propertyId="ports.settings.custompinname" value="NC_14"/>
+    <property object="PD7" propertyId="ports.settings.pinmode" value="Input pull"/>
+    <property object="PE12" propertyId="ports.settings.custompinname" value="NC_23"/>
+    <property object="PE12" propertyId="ports.settings.pinmode" value="Input pull"/>
+    <property object="PE13" propertyId="ports.settings.custompinname" value="NC_24"/>
+    <property object="PE13" propertyId="ports.settings.pinmode" value="Input pull"/>
+    <property object="PF2" propertyId="ports.settings.custompinname" value="BTN_CLOSE"/>
+    <property object="PF2" propertyId="ports.settings.dout" value="1"/>
+    <property object="PF2" propertyId="ports.settings.filter" value="Enabled"/>
+    <property object="PF2" propertyId="ports.settings.pinmode" value="Input"/>
+    <property object="PF2" propertyId="ports.settings.pulldirection" value="Pullup"/>
+    <property object="PF2" propertyId="ports.settings.pullup" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.gpio.enable.em4wu0" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.gpio.enable.em4wu4" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart1.enable.clk" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart1.enable.rx" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart1.enable.tx" value="Enabled"/>
+    <property object="USART1" propertyId="ABPeripheral.included" value="true"/>
+    <property object="USART1" propertyId="usart.mode.usartmode" value="Synchronous Mode (SPI / I2S)"/>
+  </mode>
+  <modeTransition>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.target" value="DefaultMode"/>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.source" value="RESET"/>
+  </modeTransition>
+</device:XMLDevice>

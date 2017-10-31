@@ -1,0 +1,1173 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:CNSN_74xx
+LIBS:CNSN_Amps
+LIBS:CNSN_Apple
+LIBS:CNSN_Connectors
+LIBS:CNSN_Cypress
+LIBS:CNSN_LED
+LIBS:CNSN_MIC
+LIBS:CNSN_OpAmps
+LIBS:CNSN_PowerManagement
+LIBS:CNSN_RF
+LIBS:CNSN_RLC
+LIBS:CNSN_Switches
+LIBS:CNSN_TexasInstruments
+LIBS:CNSN_VltgTranslator
+LIBS:CNSN_XTAL
+LIBS:efm
+LIBS:nrf24
+LIBS:lp2989
+LIBS:MountingHoles
+LIBS:switches
+LIBS:leds
+LIBS:si2300ds
+LIBS:peugeot_auto-cache
+EELAYER 25 0
+EELAYER END
+$Descr User 9000 9000
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L EFM32ZG110F32-QFN24T U3
+U 1 1 582F944E
+P 5125 3600
+F 0 "U3" H 5125 4050 60  0000 C CNN
+F 1 "EFM32ZG110F32-QFN24T" H 5275 3950 40  0000 C CNN
+F 2 "QFN:QFN-24-1EP_5x5mm_Pitch0.65mm" H 7225 3925 60  0001 C CNN
+F 3 "" H 5525 3600 60  0000 C CNN
+F 4 "Value" H 6450 4025 60  0001 C CNN "Fieldname"
+F 5 "EFM32ZG110F32-QFN24" H 6875 4125 60  0001 C CNN "manf#"
+	1    5125 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L NRF24L01 U1
+U 1 1 5830C393
+P 5325 1500
+F 0 "U1" H 5325 1675 40  0000 C CNN
+F 1 "NRF24L01" H 5325 1300 40  0000 C CNN
+F 2 "NRF:NRF24L01" H 5925 1525 60  0001 C CNN
+F 3 "" H 5325 1675 60  0000 C CNN
+F 4 "Value" H 5725 1450 60  0001 C CNN "Fieldname"
+	1    5325 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LP2989 U2
+U 1 1 5830CA03
+P 3050 1675
+F 0 "U2" H 3050 1675 40  0000 C CNN
+F 1 "LP2989" H 3050 1575 40  0000 C CNN
+F 2 "VSSOP:VSSOP8" H 3775 1675 60  0001 C CNN
+F 3 "" H 2975 1650 60  0000 C CNN
+F 4 "Value" H 3575 1775 60  0001 C CNN "Fieldname"
+	1    3050 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole_M4 M1
+U 1 1 5831CE03
+P 4100 6650
+F 0 "M1" H 4100 6875 30  0000 C CNN
+F 1 "Mounting_Hole_M5" H 4100 6425 30  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_5.3mm_M5" H 4100 6650 30  0001 C CNN
+F 3 "" H 4100 6650 30  0000 C CNN
+F 4 "Value" H 4100 6650 60  0001 C CNN "Fieldname"
+	1    4100 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_Bicolor_Common_Catode D1
+U 1 1 5831E362
+P 2125 4550
+F 0 "D1" H 2125 4775 50  0000 C CNN
+F 1 "Led_Bicolor_Common_Catode" H 2000 4250 50  0000 C CNN
+F 2 "LEDs:LED_3ARG9HWA" H 2125 4550 50  0001 C CNN
+F 3 "http://lispol.com/oferta/optoelektronika/diody-led/3mm" H 2125 4550 50  0001 C CNN
+F 4 "Value" H 2125 4550 60  0001 C CNN "Fieldname"
+F 5 "3ARG9HWA" H 2125 4550 60  0001 C CNN "manf#"
+	1    2125 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L TP-1198 SW1
+U 1 1 5831E488
+P 2000 7200
+F 0 "SW1" H 2000 7300 40  0000 C CNN
+F 1 "TP-1198" H 2000 7100 40  0000 C CNN
+F 2 "switches:TP-1198_4.5x4.5x0.55mm" H 3350 7325 60  0001 C CNN
+F 3 "http://lispol.com/oferta/przelaczniki-przyciski/tact-switch,1-0,0,21,21" H 2000 7200 60  0001 C CNN
+F 4 "Value" H 3275 7175 60  0001 C CNN "Fieldname"
+F 5 "TP-1198" H 2000 7200 60  0001 C CNN "manf#"
+	1    2000 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L TP-1198 SW2
+U 1 1 5831E502
+P 2475 7200
+F 0 "SW2" H 2475 7300 40  0000 C CNN
+F 1 "TP-1198" H 2475 7100 40  0000 C CNN
+F 2 "switches:TP-1198_4.5x4.5x0.55mm" H 3825 7325 60  0001 C CNN
+F 3 "http://lispol.com/oferta/przelaczniki-przyciski/tact-switch,1-0,0,21,21" H 2475 7200 60  0001 C CNN
+F 4 "Value" H 3750 7175 60  0001 C CNN "Fieldname"
+F 5 "TP-1198" H 2475 7200 60  0001 C CNN "manf#"
+	1    2475 7200
+	1    0    0    -1  
+$EndComp
+Text Label 4175 4050 2    40   ~ 0
+DBG_SWCLK
+Text Label 4175 4125 2    40   ~ 0
+DBG_SWDIO
+Text Label 6175 3150 0    40   ~ 0
+DBG_RST
+$Comp
+L SWD_Simplified U4
+U 1 1 58330260
+P 1975 3050
+F 0 "U4" H 1975 3225 40  0000 C CNN
+F 1 "SWD_Simplified" V 2150 3050 40  0000 C CNN
+F 2 "CNSN_Connectors:CNSN_SWD_SimplifiedConnector(pitch1.27)" H 1975 2775 60  0001 C CNN
+F 3 "" H 2025 3025 60  0000 C CNN
+F 4 "Value" H 2000 2700 35  0001 C CNN "Fieldname"
+	1    1975 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 58330E06
+P 2550 1525
+F 0 "C1" V 2375 1500 50  0000 L CNN
+F 1 "10nF/16V" V 2450 1200 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 2550 1525 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Vishay-Vitramon/VJ0402Y103KXJAC/?qs=sGAEpiMZZMs0AnBnWHyRQBeEaU7MLhVpHBVs4ZFbMJo%3d" H 2550 1525 50  0001 C CNN
+F 4 "Value" H 2550 1525 60  0001 C CNN "Fieldname"
+F 5 "VJ0402Y103KXJAC" H 2550 1525 60  0001 C CNN "manf#"
+	1    2550 1525
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 58331C8E
+P 2550 1825
+F 0 "C2" V 2750 1800 50  0000 L CNN
+F 1 "2.2uF/25V" V 2675 1800 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 2550 1825 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Murata/GRM155R61E225KE11D/?qs=%2fha2pyFadugsr51Fgcs3VPKMQOWolYNwNkrq%252bVo%2fy63di5sclUC3CPB9PY%2f9c2%252b%2f" H 2550 1825 50  0001 C CNN
+F 4 "Value" H 2550 1825 60  0001 C CNN "Fieldname"
+F 5 "GRM155R61E225KE11D" H 2550 1825 60  0001 C CNN "manf#"
+	1    2550 1825
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 58332803
+P 2400 2125
+F 0 "#PWR6" H 2400 1875 50  0001 C CNN
+F 1 "GND" H 2400 1975 50  0000 C CNN
+F 2 "" H 2400 2125 50  0000 C CNN
+F 3 "" H 2400 2125 50  0000 C CNN
+	1    2400 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR2
+U 1 1 58332835
+P 2700 1400
+F 0 "#PWR2" H 2700 1250 50  0001 C CNN
+F 1 "+12V" H 2700 1540 50  0000 C CNN
+F 2 "" H 2700 1400 50  0000 C CNN
+F 3 "" H 2700 1400 50  0000 C CNN
+	1    2700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR3
+U 1 1 583338DF
+P 3375 1400
+F 0 "#PWR3" H 3375 1250 50  0001 C CNN
+F 1 "+12V" H 3375 1540 50  0000 C CNN
+F 2 "" H 3375 1400 50  0000 C CNN
+F 3 "" H 3375 1400 50  0000 C CNN
+	1    3375 1400
+	1    0    0    -1  
+$EndComp
+Text Label 3875 1550 0    40   ~ 0
+V_ERR
+$Comp
+L R_Small R1
+U 1 1 5833404C
+P 3775 1675
+F 0 "R1" V 3850 1625 50  0000 L CNN
+F 1 "330K" V 3700 1575 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 3775 1675 50  0001 C CNN
+F 3 "http://lispol.com/produkt/rezystor-330k-5-smd0805---r330ksmd0805" H 3775 1675 50  0001 C CNN
+F 4 "Value" H 3775 1675 60  0001 C CNN "Fieldname"
+F 5 "r330k.smd0805" H 3775 1675 60  0001 C CNN "manf#"
+	1    3775 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR4
+U 1 1 58334446
+P 3600 1400
+F 0 "#PWR4" H 3600 1250 50  0001 C CNN
+F 1 "+3V3" H 3600 1540 50  0000 C CNN
+F 2 "" H 3600 1400 50  0000 C CNN
+F 3 "" H 3600 1400 50  0000 C CNN
+	1    3600 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 58334BED
+P 3450 1925
+F 0 "C3" V 3650 1900 50  0000 L CNN
+F 1 "4.7uF/10V" V 3575 1900 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 3450 1925 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/AVX/0402ZD475MAT2A/?qs=%2fha2pyFadujrp6aa%2fbmr5NRax%252bW5O8x4XaQ09aRXY09Jp3iZubOSFQ%3d%3d" H 3450 1925 50  0001 C CNN
+F 4 "Value" H 3450 1925 60  0001 C CNN "Fieldname"
+F 5 "0402ZD475MAT2A" H 3450 1925 60  0001 C CNN "manf#"
+	1    3450 1925
+	0    1    1    0   
+$EndComp
+$Comp
+L +3V3 #PWR7
+U 1 1 58335C2F
+P 1800 2825
+F 0 "#PWR7" H 1800 2675 50  0001 C CNN
+F 1 "+3V3" H 1800 2965 50  0000 C CNN
+F 2 "" H 1800 2825 50  0000 C CNN
+F 3 "" H 1800 2825 50  0000 C CNN
+	1    1800 2825
+	1    0    0    -1  
+$EndComp
+Text Label 1475 3100 2    40   ~ 0
+DBG_SWCLK
+Text Label 1475 3150 2    40   ~ 0
+DBG_RST
+$Comp
+L GND #PWR9
+U 1 1 583378DD
+P 1800 3200
+F 0 "#PWR9" H 1800 2950 50  0001 C CNN
+F 1 "GND" H 1800 3050 50  0000 C CNN
+F 2 "" H 1800 3200 50  0000 C CNN
+F 3 "" H 1800 3200 50  0000 C CNN
+	1    1800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR10
+U 1 1 58338BBC
+P 6050 3875
+F 0 "#PWR10" H 6050 3625 50  0001 C CNN
+F 1 "GND" H 6050 3725 50  0000 C CNN
+F 2 "" H 6050 3875 50  0000 C CNN
+F 3 "" H 6050 3875 50  0000 C CNN
+	1    6050 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C4
+U 1 1 58339427
+P 6300 3675
+F 0 "C4" V 6200 3675 50  0000 L CNN
+F 1 "1uF" V 6200 3500 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 6300 3675 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Murata/GRM155R61A105KE15D/?qs=%2fha2pyFadugsr51Fgcs3VCKY0Ar7R8BFY%252bAcqQPnfRioqJBCMxe2jA%3d%3d" H 6300 3675 50  0001 C CNN
+F 4 "Value" H 6300 3675 60  0001 C CNN "Fieldname"
+F 5 "GRM155R61A105KE15D" H 6300 3675 60  0001 C CNN "manf#"
+	1    6300 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR11
+U 1 1 58339A39
+P 6300 3875
+F 0 "#PWR11" H 6300 3625 50  0001 C CNN
+F 1 "GND" H 6300 3725 50  0000 C CNN
+F 2 "" H 6300 3875 50  0000 C CNN
+F 3 "" H 6300 3875 50  0000 C CNN
+	1    6300 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C5
+U 1 1 58339D85
+P 6575 3675
+F 0 "C5" V 6675 3575 50  0000 L CNN
+F 1 "100nF" V 6675 3725 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 6575 3675 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Murata/GRM155R71C104KA88D/?qs=%2fha2pyFadujIGegxGvwRDvVwOQgIoi4nDRGA%252bvXwE%252b%2fh1BTHKrtK2A%3d%3d" H 6575 3675 50  0001 C CNN
+F 4 "Value" H 6575 3675 60  0001 C CNN "Fieldname"
+F 5 "GRM155R71C104KA88D" H 6575 3675 60  0001 C CNN "manf#"
+	1    6575 3675
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C6
+U 1 1 5833A04B
+P 6800 3675
+F 0 "C6" V 6900 3575 50  0000 L CNN
+F 1 "100nF" V 6900 3725 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 6800 3675 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Murata/GRM155R71C104KA88D/?qs=%2fha2pyFadujIGegxGvwRDvVwOQgIoi4nDRGA%252bvXwE%252b%2fh1BTHKrtK2A%3d%3d" H 6800 3675 50  0001 C CNN
+F 4 "Value" H 6800 3675 60  0001 C CNN "Fieldname"
+F 5 "GRM155R71C104KA88D" H 6800 3675 60  0001 C CNN "manf#"
+	1    6800 3675
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C7
+U 1 1 5833A8D9
+P 7025 3675
+F 0 "C7" V 7125 3575 50  0000 L CNN
+F 1 "100nF" V 7125 3725 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 7025 3675 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Murata/GRM155R71C104KA88D/?qs=%2fha2pyFadujIGegxGvwRDvVwOQgIoi4nDRGA%252bvXwE%252b%2fh1BTHKrtK2A%3d%3d" H 7025 3675 50  0001 C CNN
+F 4 "Value" H 7025 3675 60  0001 C CNN "Fieldname"
+F 5 "GRM155R71C104KA88D" H 7025 3675 60  0001 C CNN "manf#"
+	1    7025 3675
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR12
+U 1 1 5833AF04
+P 6575 3875
+F 0 "#PWR12" H 6575 3625 50  0001 C CNN
+F 1 "GND" H 6575 3725 50  0000 C CNN
+F 2 "" H 6575 3875 50  0000 C CNN
+F 3 "" H 6575 3875 50  0000 C CNN
+	1    6575 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR13
+U 1 1 5833AF42
+P 6800 3875
+F 0 "#PWR13" H 6800 3625 50  0001 C CNN
+F 1 "GND" H 6800 3725 50  0000 C CNN
+F 2 "" H 6800 3875 50  0000 C CNN
+F 3 "" H 6800 3875 50  0000 C CNN
+	1    6800 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR14
+U 1 1 5833AF80
+P 7025 3875
+F 0 "#PWR14" H 7025 3625 50  0001 C CNN
+F 1 "GND" H 7025 3725 50  0000 C CNN
+F 2 "" H 7025 3875 50  0000 C CNN
+F 3 "" H 7025 3875 50  0000 C CNN
+	1    7025 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR8
+U 1 1 5833B62E
+P 7025 2975
+F 0 "#PWR8" H 7025 2825 50  0001 C CNN
+F 1 "+3V3" H 7025 3115 50  0000 C CNN
+F 2 "" H 7025 2975 50  0000 C CNN
+F 3 "" H 7025 2975 50  0000 C CNN
+	1    7025 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C8
+U 1 1 5833C1D1
+P 7250 3675
+F 0 "C8" V 7350 3575 50  0000 L CNN
+F 1 "100nF" V 7350 3725 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 7250 3675 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Murata/GRM155R71C104KA88D/?qs=%2fha2pyFadujIGegxGvwRDvVwOQgIoi4nDRGA%252bvXwE%252b%2fh1BTHKrtK2A%3d%3d" H 7250 3675 50  0001 C CNN
+F 4 "Value" H 7250 3675 60  0001 C CNN "Fieldname"
+F 5 "GRM155R71C104KA88D" H 7250 3675 60  0001 C CNN "manf#"
+	1    7250 3675
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C9
+U 1 1 5833C2A4
+P 7475 3675
+F 0 "C9" V 7575 3575 50  0000 L CNN
+F 1 "100nF" V 7575 3725 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 7475 3675 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Murata/GRM155R71C104KA88D/?qs=%2fha2pyFadujIGegxGvwRDvVwOQgIoi4nDRGA%252bvXwE%252b%2fh1BTHKrtK2A%3d%3d" H 7475 3675 50  0001 C CNN
+F 4 "Value" H 7475 3675 60  0001 C CNN "Fieldname"
+F 5 "GRM155R71C104KA88D" H 7475 3675 60  0001 C CNN "manf#"
+	1    7475 3675
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR15
+U 1 1 5833C301
+P 7250 3875
+F 0 "#PWR15" H 7250 3625 50  0001 C CNN
+F 1 "GND" H 7250 3725 50  0000 C CNN
+F 2 "" H 7250 3875 50  0000 C CNN
+F 3 "" H 7250 3875 50  0000 C CNN
+	1    7250 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR16
+U 1 1 5833C345
+P 7475 3875
+F 0 "#PWR16" H 7475 3625 50  0001 C CNN
+F 1 "GND" H 7475 3725 50  0000 C CNN
+F 2 "" H 7475 3875 50  0000 C CNN
+F 3 "" H 7475 3875 50  0000 C CNN
+	1    7475 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L1
+U 1 1 5833C57F
+P 7475 3150
+F 0 "L1" H 7425 3150 50  0000 C CNN
+F 1 "BLM15AG100SZ1D" V 7575 3150 50  0000 C CNN
+F 2 "CNSN_RLC_SMD:CNSN_L_0402" H 7475 3150 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Murata/BLM15AG100SZ1D/?qs=%2fha2pyFaduixangPkDIH1qQxkSteL%2flU6R9yTfCmhJ36h20fUZGX8g%3d%3d" H 7475 3150 50  0001 C CNN
+F 4 "Value" H 7475 3150 60  0001 C CNN "Fieldname"
+F 5 "BLM15AG100SZ1D" H 7475 3150 60  0001 C CNN "manf#"
+	1    7475 3150
+	1    0    0    -1  
+$EndComp
+Text Label 4175 3075 2    40   ~ 0
+NRF_SPI_CLK
+Text Label 4175 3450 2    40   ~ 0
+NRF_SPI_MOSI
+Text Label 4175 3525 2    40   ~ 0
+NRF_SPI_MISO
+Text Label 4175 3225 2    40   ~ 0
+NRF_SPI_SOFT_CSN
+$Comp
+L TEST_1P W1
+U 1 1 58342168
+P 1400 1475
+F 0 "W1" H 1400 1745 50  0000 C CNN
+F 1 "12V" H 1400 1675 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 1600 1475 50  0001 C CNN
+F 3 "" H 1600 1475 50  0000 C CNN
+F 4 "Value" H 1400 1475 60  0001 C CNN "Fieldname"
+	1    1400 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P W2
+U 1 1 583427AF
+P 1400 2025
+F 0 "W2" H 1400 2295 50  0000 C CNN
+F 1 "GND" H 1400 2225 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 1600 2025 50  0001 C CNN
+F 3 "" H 1600 2025 50  0000 C CNN
+F 4 "Value" H 1400 2025 60  0001 C CNN "Fieldname"
+	1    1400 2025
+	1    0    0    -1  
+$EndComp
+Text Notes 1275 1150 0    40   ~ 0
+Battery\n27a
+Text Label 4175 3300 2    40   ~ 0
+NRF_IRQ
+Text Label 4175 3375 2    40   ~ 0
+NRF_CE
+Text Label 5600 1625 0    40   ~ 0
+NRF_IRQ
+Text Label 5600 1475 0    40   ~ 0
+NRF_SPI_SOFT_CSN
+Text Label 5600 1550 0    40   ~ 0
+NRF_SPI_MOSI
+Text Label 5000 1625 2    40   ~ 0
+NRF_SPI_MISO
+Text Label 5000 1550 2    40   ~ 0
+NRF_SPI_CLK
+Text Label 5000 1475 2    40   ~ 0
+NRF_CE
+$Comp
+L +3V3 #PWR1
+U 1 1 5834A930
+P 5600 1350
+F 0 "#PWR1" H 5600 1200 50  0001 C CNN
+F 1 "+3V3" H 5600 1490 50  0000 C CNN
+F 2 "" H 5600 1350 50  0000 C CNN
+F 3 "" H 5600 1350 50  0000 C CNN
+	1    5600 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR5
+U 1 1 5834B04C
+P 5050 1675
+F 0 "#PWR5" H 5050 1425 50  0001 C CNN
+F 1 "GND" H 5050 1525 50  0000 C CNN
+F 2 "" H 5050 1675 50  0000 C CNN
+F 3 "" H 5050 1675 50  0000 C CNN
+	1    5050 1675
+	1    0    0    -1  
+$EndComp
+Text Notes 5625 1375 0    40   ~ 0
+Decoupled capacitor is on the board
+$Comp
+L R_Small R2
+U 1 1 5834C22A
+P 2025 5075
+F 0 "R2" H 2150 5100 50  0000 L CNN
+F 1 "330R" H 2055 5035 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 2025 5075 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Vishay/CRCW0603330RFKEA/?qs=sGAEpiMZZMu61qfTUdNhG1ajYgHS1GM45%252bgzFHAzpyA%3d" H 2025 5075 50  0001 C CNN
+F 4 "Value" H 2025 5075 60  0001 C CNN "Fieldname"
+F 5 "CRCW0603330RFKEA" H 2025 5075 60  0001 C CNN "manf#"
+	1    2025 5075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Si2300DS Q1
+U 1 1 5834D0AC
+P 1925 5450
+F 0 "Q1" H 1675 5575 50  0000 L CNN
+F 1 "Si2300DS" H 1500 5500 50  0000 L CNN
+F 2 "SOT-23" H 2125 5375 50  0001 L CIN
+F 3 "" H 1925 5450 50  0000 L CNN
+F 4 "Value" H 1925 5450 60  0001 C CNN "Fieldname"
+	1    1925 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Si2300DS Q2
+U 1 1 5834DD21
+P 2325 5450
+F 0 "Q2" H 2075 5575 50  0000 L CNN
+F 1 "Si2300DS" H 1900 5500 50  0000 L CNN
+F 2 "SOT-23" H 2525 5375 50  0001 L CIN
+F 3 "" H 2325 5450 50  0000 L CNN
+F 4 "Value" H 2325 5450 60  0001 C CNN "Fieldname"
+	1    2325 5450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR18
+U 1 1 5834E290
+P 2125 5725
+F 0 "#PWR18" H 2125 5475 50  0001 C CNN
+F 1 "GND" H 2125 5575 50  0000 C CNN
+F 2 "" H 2125 5725 50  0000 C CNN
+F 3 "" H 2125 5725 50  0000 C CNN
+	1    2125 5725
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR17
+U 1 1 5834EDC3
+P 2125 4200
+F 0 "#PWR17" H 2125 4050 50  0001 C CNN
+F 1 "+3V3" H 2125 4340 50  0000 C CNN
+F 2 "" H 2125 4200 50  0000 C CNN
+F 3 "" H 2125 4200 50  0000 C CNN
+	1    2125 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R3
+U 1 1 5834F64B
+P 2225 5075
+F 0 "R3" H 2255 5095 50  0000 L CNN
+F 1 "330R" H 2255 5035 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 2225 5075 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Vishay/CRCW0603330RFKEA/?qs=sGAEpiMZZMu61qfTUdNhG1ajYgHS1GM45%252bgzFHAzpyA%3d" H 2225 5075 50  0001 C CNN
+F 4 "Value" H 2225 5075 60  0001 C CNN "Fieldname"
+F 5 "CRCW0603330RFKEA" H 2225 5075 60  0001 C CNN "manf#"
+	1    2225 5075
+	1    0    0    -1  
+$EndComp
+Text Label 2775 5500 0    40   ~ 0
+LED_GREEN
+Text Label 1500 5500 2    40   ~ 0
+LED_RED
+$Comp
+L R_Small R4
+U 1 1 58352EAC
+P 2000 6875
+F 0 "R4" H 2030 6895 50  0000 L CNN
+F 1 "10K" H 2030 6835 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 2000 6875 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Panasonic/ERJ-2RKF1002X/?qs=%2fha2pyFadujciewGcSbxYCeocmJ1V0ffuiBNpRUU2nm5e2XaRJ685Q%3d%3d" H 2000 6875 50  0001 C CNN
+F 4 "Value" H 2000 6875 60  0001 C CNN "Fieldname"
+F 5 "ERJ-2RKF1002X" H 2000 6875 60  0001 C CNN "manf#"
+	1    2000 6875
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R5
+U 1 1 5835423B
+P 2475 6875
+F 0 "R5" H 2505 6895 50  0000 L CNN
+F 1 "10K" H 2505 6835 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 2475 6875 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Panasonic/ERJ-2RKF1002X/?qs=%2fha2pyFadujciewGcSbxYCeocmJ1V0ffuiBNpRUU2nm5e2XaRJ685Q%3d%3d" H 2475 6875 50  0001 C CNN
+F 4 "Value" H 2475 6875 60  0001 C CNN "Fieldname"
+F 5 "ERJ-2RKF1002X" H 2475 6875 60  0001 C CNN "manf#"
+	1    2475 6875
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR23
+U 1 1 583545A8
+P 2000 7425
+F 0 "#PWR23" H 2000 7175 50  0001 C CNN
+F 1 "GND" H 2000 7275 50  0000 C CNN
+F 2 "" H 2000 7425 50  0000 C CNN
+F 3 "" H 2000 7425 50  0000 C CNN
+	1    2000 7425
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR24
+U 1 1 58354C8F
+P 2475 7425
+F 0 "#PWR24" H 2475 7175 50  0001 C CNN
+F 1 "GND" H 2475 7275 50  0000 C CNN
+F 2 "" H 2475 7425 50  0000 C CNN
+F 3 "" H 2475 7425 50  0000 C CNN
+	1    2475 7425
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR20
+U 1 1 58355437
+P 2475 6725
+F 0 "#PWR20" H 2475 6575 50  0001 C CNN
+F 1 "+3V3" H 2475 6865 50  0000 C CNN
+F 2 "" H 2475 6725 50  0000 C CNN
+F 3 "" H 2475 6725 50  0000 C CNN
+	1    2475 6725
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR19
+U 1 1 58355700
+P 2000 6725
+F 0 "#PWR19" H 2000 6575 50  0001 C CNN
+F 1 "+3V3" H 2000 6865 50  0000 C CNN
+F 2 "" H 2000 6725 50  0000 C CNN
+F 3 "" H 2000 6725 50  0000 C CNN
+	1    2000 6725
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C11
+U 1 1 58355D89
+P 2975 7200
+F 0 "C11" V 3075 7175 50  0000 L CNN
+F 1 "100nF" V 2850 7150 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 2975 7200 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Murata/GRM155R71C104KA88D/?qs=%2fha2pyFadujIGegxGvwRDvVwOQgIoi4nDRGA%252bvXwE%252b%2fh1BTHKrtK2A%3d%3d" H 2975 7200 50  0001 C CNN
+F 4 "Value" H 2975 7200 60  0001 C CNN "Fieldname"
+F 5 "GRM155R71C104KA88D" H 2975 7200 60  0001 C CNN "manf#"
+	1    2975 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R7
+U 1 1 583574A5
+P 2800 7025
+F 0 "R7" V 2725 7000 50  0000 L CNN
+F 1 "4K7" V 2875 6950 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 2800 7025 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Panasonic/ERJ-2RKF4701X/?qs=%2fha2pyFadujciewGcSbxYIkTCauosbmB2F%2fm6dHWw44IVO0GVwVVXQ%3d%3d" H 2800 7025 50  0001 C CNN
+F 4 "Value" H 2800 7025 60  0001 C CNN "Fieldname"
+F 5 "ERJ-2RKF4701X" H 2800 7025 60  0001 C CNN "manf#"
+	1    2800 7025
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR22
+U 1 1 58357C9B
+P 2975 7375
+F 0 "#PWR22" H 2975 7125 50  0001 C CNN
+F 1 "GND" H 2975 7225 50  0000 C CNN
+F 2 "" H 2975 7375 50  0000 C CNN
+F 3 "" H 2975 7375 50  0000 C CNN
+	1    2975 7375
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C10
+U 1 1 58358937
+P 1500 7200
+F 0 "C10" V 1600 7175 50  0000 L CNN
+F 1 "100nF" V 1375 7150 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 1500 7200 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Murata/GRM155R71C104KA88D/?qs=%2fha2pyFadujIGegxGvwRDvVwOQgIoi4nDRGA%252bvXwE%252b%2fh1BTHKrtK2A%3d%3d" H 1500 7200 50  0001 C CNN
+F 4 "Value" H 1500 7200 60  0001 C CNN "Fieldname"
+F 5 "GRM155R71C104KA88D" H 1500 7200 60  0001 C CNN "manf#"
+	1    1500 7200
+	1    0    0    1   
+$EndComp
+$Comp
+L R_Small R6
+U 1 1 5835893F
+P 1675 7025
+F 0 "R6" V 1600 7000 50  0000 L CNN
+F 1 "4K7" V 1750 6950 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 1675 7025 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Panasonic/ERJ-2RKF4701X/?qs=%2fha2pyFadujciewGcSbxYIkTCauosbmB2F%2fm6dHWw44IVO0GVwVVXQ%3d%3d" H 1675 7025 50  0001 C CNN
+F 4 "Value" H 1675 7025 60  0001 C CNN "Fieldname"
+F 5 "ERJ-2RKF4701X" H 1675 7025 60  0001 C CNN "manf#"
+	1    1675 7025
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR21
+U 1 1 58358947
+P 1500 7375
+F 0 "#PWR21" H 1500 7125 50  0001 C CNN
+F 1 "GND" H 1500 7225 50  0000 C CNN
+F 2 "" H 1500 7375 50  0000 C CNN
+F 3 "" H 1500 7375 50  0000 C CNN
+	1    1500 7375
+	-1   0    0    -1  
+$EndComp
+Text Label 1500 6900 2    40   ~ 0
+BTN_OPEN
+Text Label 2975 6900 0    40   ~ 0
+BTN_CLOSE
+Text Notes 2100 6300 0    60   ~ 0
+Buttons
+Text Notes 2000 3825 0    60   ~ 0
+LEDs
+Text Notes 3775 6250 0    60   ~ 0
+Mounting hole
+Text Notes 1325 2625 0    60   ~ 0
+SWD socket
+Text Notes 5250 1025 0    60   ~ 0
+RF module 2.4 GHz
+Text Notes 2150 950  0    60   ~ 0
+Voltage regulator 12 V to 3.3 V
+Text Label 4175 3600 2    40   ~ 0
+LED_GREEN
+Text Label 4175 3675 2    40   ~ 0
+LED_RED
+Text Label 4175 3000 2    40   ~ 0
+BTN_OPEN
+Text Label 4175 4200 2    40   ~ 0
+BTN_CLOSE
+NoConn ~ 4250 3150
+NoConn ~ 4250 3975
+NoConn ~ 4250 3900
+NoConn ~ 4250 3825
+NoConn ~ 4250 3750
+Text Notes 5550 2750 0    60   ~ 0
+uC
+$Comp
+L D_Schottky_Small D2
+U 1 1 5837EB74
+P 1925 1625
+F 0 "D2" H 1875 1705 50  0000 L CNN
+F 1 "BAT-85 30V/200mA" H 1525 1550 50  0000 L CNN
+F 2 "Diodes:DO-34_(SOD68)" V 1925 1625 50  0001 C CNN
+F 3 "http://lispol.com/produkt/dioda-schottky-30v200ma---bat85" V 1925 1625 50  0001 C CNN
+F 4 "Value" H 1925 1625 60  0001 C CNN "Fieldname"
+F 5 "BAT-85" H 1925 1625 60  0001 C CNN "manf#"
+	1    1925 1625
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R8
+U 1 1 584439DF
+P 1675 2875
+F 0 "R8" V 1750 2850 50  0000 L CNN
+F 1 "10K" V 1600 2800 50  0000 L CNN
+F 2 "CNSN_RLC_SMD:CNSN_C_0402" H 1675 2875 50  0001 C CNN
+F 3 "http://pl.mouser.com/ProductDetail/Panasonic/ERJ-2RKF1002X/?qs=%2fha2pyFadujciewGcSbxYCeocmJ1V0ffuiBNpRUU2nm5e2XaRJ685Q%3d%3d" H 1675 2875 50  0001 C CNN
+F 4 "Value" H 1675 2875 60  0001 C CNN "Fieldname"
+F 5 "ERJ-2RKF1002X" H 1675 2875 60  0001 C CNN "manf#"
+	1    1675 2875
+	0    1    1    0   
+$EndComp
+Text Label 1475 3000 2    40   ~ 0
+DBG_SWDIO
+Wire Wire Line
+	4250 4125 4175 4125
+Wire Wire Line
+	4250 4050 4175 4050
+Wire Wire Line
+	6000 3150 6175 3150
+Wire Wire Line
+	2400 1725 2775 1725
+Wire Wire Line
+	2400 1525 2400 2125
+Wire Wire Line
+	2650 1825 2775 1825
+Wire Wire Line
+	2700 1400 2700 1825
+Connection ~ 2700 1825
+Wire Wire Line
+	2450 1825 2400 1825
+Connection ~ 2400 1825
+Wire Wire Line
+	2775 1525 2650 1525
+Wire Wire Line
+	2450 1525 2400 1525
+Connection ~ 2400 1725
+Wire Wire Line
+	3325 1525 3375 1525
+Wire Wire Line
+	3375 1525 3375 1400
+Wire Wire Line
+	3325 1825 3775 1825
+Wire Wire Line
+	3325 1725 3600 1725
+Wire Wire Line
+	3600 1400 3600 1925
+Connection ~ 3600 1725
+Wire Wire Line
+	3775 1825 3775 1775
+Connection ~ 3600 1825
+Wire Wire Line
+	3350 1550 3350 1625
+Wire Wire Line
+	3350 1625 3325 1625
+Wire Wire Line
+	3775 1575 3775 1550
+Wire Wire Line
+	3350 1550 3875 1550
+Connection ~ 3775 1550
+Wire Wire Line
+	3600 1925 3550 1925
+Wire Wire Line
+	3350 1925 3050 1925
+Wire Wire Line
+	3050 1925 3050 2100
+Wire Wire Line
+	3050 2100 1400 2100
+Connection ~ 2400 2100
+Wire Wire Line
+	1825 3100 1475 3100
+Wire Wire Line
+	1825 3000 1475 3000
+Wire Wire Line
+	1825 3150 1475 3150
+Wire Wire Line
+	1825 3050 1800 3050
+Wire Wire Line
+	1800 3050 1800 3200
+Wire Wire Line
+	6050 3000 6050 3875
+Wire Wire Line
+	6050 3000 6000 3000
+Wire Wire Line
+	6300 3875 6300 3775
+Wire Wire Line
+	6000 3450 6300 3450
+Wire Wire Line
+	6300 3450 6300 3575
+Wire Wire Line
+	6100 3525 6000 3525
+Wire Wire Line
+	6100 3075 6100 3525
+Wire Wire Line
+	6100 3075 6000 3075
+Wire Wire Line
+	7025 3375 6000 3375
+Connection ~ 6100 3375
+Wire Wire Line
+	6575 3375 6575 3575
+Wire Wire Line
+	6800 3375 6800 3575
+Connection ~ 6575 3375
+Wire Wire Line
+	7025 2975 7025 3575
+Connection ~ 6800 3375
+Wire Wire Line
+	7025 3875 7025 3775
+Wire Wire Line
+	6800 3875 6800 3775
+Wire Wire Line
+	6575 3875 6575 3775
+Connection ~ 7025 3375
+Wire Wire Line
+	6000 3300 7475 3300
+Wire Wire Line
+	6125 3300 6125 3225
+Wire Wire Line
+	6125 3225 6000 3225
+Connection ~ 6125 3300
+Wire Wire Line
+	7250 3300 7250 3575
+Wire Wire Line
+	7475 3875 7475 3775
+Wire Wire Line
+	7250 3875 7250 3775
+Wire Wire Line
+	7475 3250 7475 3575
+Connection ~ 7250 3300
+Connection ~ 7475 3300
+Wire Wire Line
+	7475 3050 7475 3000
+Wire Wire Line
+	7475 3000 7025 3000
+Connection ~ 7025 3000
+Wire Wire Line
+	4250 3075 4175 3075
+Wire Wire Line
+	4175 3450 4250 3450
+Wire Wire Line
+	4250 3525 4175 3525
+Wire Wire Line
+	4250 3225 4175 3225
+Wire Wire Line
+	1400 1625 1400 1475
+Connection ~ 2700 1625
+Wire Wire Line
+	1400 2100 1400 2025
+Wire Notes Line
+	1525 1025 1225 1025
+Wire Notes Line
+	1225 1025 1225 2225
+Wire Notes Line
+	1525 1025 1525 2225
+Wire Notes Line
+	1525 2225 1225 2225
+Wire Wire Line
+	4250 3300 4175 3300
+Wire Wire Line
+	4250 3375 4175 3375
+Wire Wire Line
+	5600 1625 5550 1625
+Wire Wire Line
+	5600 1475 5550 1475
+Wire Wire Line
+	5600 1550 5550 1550
+Wire Wire Line
+	5100 1625 5000 1625
+Wire Wire Line
+	5100 1550 5000 1550
+Wire Wire Line
+	5100 1475 5000 1475
+Wire Wire Line
+	5550 1400 5600 1400
+Wire Wire Line
+	5600 1400 5600 1350
+Wire Wire Line
+	5100 1400 5050 1400
+Wire Wire Line
+	5050 1400 5050 1675
+Wire Wire Line
+	2025 5650 2025 5700
+Wire Wire Line
+	2025 5700 2225 5700
+Wire Wire Line
+	2225 5700 2225 5650
+Wire Wire Line
+	2125 5725 2125 5700
+Connection ~ 2125 5700
+Wire Wire Line
+	2125 4250 2125 4200
+Wire Wire Line
+	2025 4850 2025 4975
+Wire Wire Line
+	2225 4975 2225 4850
+Wire Wire Line
+	2025 5250 2025 5175
+Wire Wire Line
+	2225 5250 2225 5175
+Wire Wire Line
+	2525 5500 2775 5500
+Wire Wire Line
+	1725 5500 1500 5500
+Wire Wire Line
+	1850 7150 1825 7150
+Wire Wire Line
+	1825 7150 1825 7025
+Wire Wire Line
+	1775 7025 2175 7025
+Wire Wire Line
+	2000 7025 2000 6975
+Wire Wire Line
+	2175 7025 2175 7150
+Wire Wire Line
+	2175 7150 2150 7150
+Connection ~ 2000 7025
+Wire Wire Line
+	2325 7150 2300 7150
+Wire Wire Line
+	2300 7150 2300 7025
+Wire Wire Line
+	2300 7025 2700 7025
+Wire Wire Line
+	2650 7025 2650 7150
+Wire Wire Line
+	2650 7150 2625 7150
+Wire Wire Line
+	2475 7025 2475 6975
+Connection ~ 2475 7025
+Wire Wire Line
+	2000 7425 2000 7400
+Wire Wire Line
+	1825 7400 2175 7400
+Wire Wire Line
+	2175 7400 2175 7250
+Wire Wire Line
+	2175 7250 2150 7250
+Wire Wire Line
+	1825 7400 1825 7250
+Wire Wire Line
+	1825 7250 1850 7250
+Connection ~ 2000 7400
+Wire Wire Line
+	2300 7250 2325 7250
+Wire Wire Line
+	2300 7250 2300 7400
+Wire Wire Line
+	2300 7400 2650 7400
+Wire Wire Line
+	2650 7400 2650 7250
+Wire Wire Line
+	2650 7250 2625 7250
+Wire Wire Line
+	2475 7425 2475 7400
+Connection ~ 2475 7400
+Wire Wire Line
+	2000 6775 2000 6725
+Wire Wire Line
+	2475 6775 2475 6725
+Connection ~ 2650 7025
+Wire Wire Line
+	2900 7025 2975 7025
+Wire Wire Line
+	2975 6900 2975 7100
+Wire Wire Line
+	2975 7375 2975 7300
+Wire Wire Line
+	1575 7025 1500 7025
+Wire Wire Line
+	1500 6900 1500 7100
+Wire Wire Line
+	1500 7375 1500 7300
+Connection ~ 1825 7025
+Connection ~ 1500 7025
+Connection ~ 2975 7025
+Wire Notes Line
+	1075 6100 3450 6100
+Wire Notes Line
+	3450 6100 3450 7725
+Wire Notes Line
+	3450 7725 1075 7725
+Wire Notes Line
+	1075 7725 1075 6100
+Wire Notes Line
+	1075 3650 1075 5950
+Wire Notes Line
+	1075 5950 3175 5950
+Wire Notes Line
+	3175 5950 3175 3650
+Wire Notes Line
+	3175 3650 1075 3650
+Wire Notes Line
+	3725 6100 4450 6100
+Wire Notes Line
+	4450 6100 4450 7125
+Wire Notes Line
+	4450 7125 3725 7125
+Wire Notes Line
+	3725 7125 3725 6100
+Wire Notes Line
+	1075 2500 2075 2500
+Wire Notes Line
+	1075 3500 2225 3500
+Wire Notes Line
+	1075 3500 1075 2500
+Wire Notes Line
+	4525 800  4525 1950
+Wire Notes Line
+	4525 1950 6750 1950
+Wire Notes Line
+	6750 1950 6750 800 
+Wire Notes Line
+	6750 800  4525 800 
+Wire Notes Line
+	1075 800  1075 2350
+Wire Notes Line
+	1075 2350 4075 2350
+Wire Notes Line
+	4075 2350 4075 800 
+Wire Notes Line
+	4075 800  1075 800 
+Wire Wire Line
+	4250 3675 4175 3675
+Wire Wire Line
+	4250 3600 4175 3600
+Wire Wire Line
+	4250 3000 4175 3000
+Wire Wire Line
+	4250 4200 4175 4200
+Wire Notes Line
+	3550 2625 3550 4400
+Wire Notes Line
+	3550 4400 7725 4400
+Wire Notes Line
+	7725 4400 7725 2625
+Wire Notes Line
+	7725 2625 3550 2625
+Wire Wire Line
+	2700 1625 2025 1625
+Wire Wire Line
+	1825 1625 1400 1625
+Wire Wire Line
+	1825 2950 1800 2950
+Wire Wire Line
+	1800 2950 1800 2825
+Wire Wire Line
+	1800 2875 1775 2875
+Connection ~ 1800 2875
+Wire Wire Line
+	1550 3150 1550 2875
+Wire Wire Line
+	1550 2875 1575 2875
+Connection ~ 1550 3150
+Wire Notes Line
+	2225 3500 2225 2500
+Wire Notes Line
+	2225 2500 2050 2500
+$EndSCHEMATC
