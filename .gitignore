@@ -4,18 +4,18 @@ Packages/
 PCBS/lib
 wrksp/
 wrksp_em/.metadata/
-wrksp_em/.metadata/EFM8SB2_SPI_Lib_Master/
-wrksp_em/.metadata/STK3200_emlcd/
-wrksp_em/.metadata/STK3200_emode/
-wrksp_em/.metadata/peugeot_pilot/.settings/
-wrksp_em/.metadata/peugeot_pilot/CMSIS/
-wrksp_em/.metadata/peugeot_pilot/GNU ARM v4.8.3 - Debug/
-wrksp_em/.metadata/peugeot_pilot/.cproject/
-wrksp_em/.metadata/peugeot_pilot/.project/
-wrksp_em/.metadata/peugeot_pilot/.peugeot_pilot.hwconf/
-wrksp_em/.metadata/peugeot_auto/.settings/
-wrksp_em/.metadata/peugeot_auto/CMSIS/
-wrksp_em/.metadata/peugeot_auto/GNU ARM v4.8.3 - Debug/
-wrksp_em/.metadata/peugeot_auto/.cproject/
-wrksp_em/.metadata/peugeot_auto/.project/
-wrksp_em/.metadata/peugeot_auto/.peugeot_pilot.hwconf/
+wrksp_em/EFM8SB2_SPI_Lib_Master/
+wrksp_em/STK3200_emlcd/
+wrksp_em/STK3200_emode/
+wrksp_em/peugeot_pilot/.settings/
+wrksp_em/peugeot_pilot/CMSIS/
+wrksp_em/peugeot_pilot/GNU ARM v4.8.3 - Debug/
+wrksp_em/peugeot_pilot/.cproject/
+wrksp_em/peugeot_pilot/.project/
+wrksp_em/peugeot_pilot/.peugeot_pilot.hwconf/
+wrksp_em/peugeot_auto/.settings/
+wrksp_em/peugeot_auto/CMSIS/
+wrksp_em/peugeot_auto/GNU ARM v4.8.3 - Debug/
+wrksp_em/peugeot_auto/.cproject/
+wrksp_em/peugeot_auto/.project/
+wrksp_em/peugeot_auto/.peugeot_pilot.hwconf/

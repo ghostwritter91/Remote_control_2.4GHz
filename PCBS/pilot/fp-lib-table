@@ -1,8 +1,0 @@
-(fp_lib_table
-  (lib (name QFN)(type KiCad)(uri C:\moje\Projekty\Pilot_peugeot\PCBS\lib\packages\QFN.pretty)(options "")(descr ""))
-  (lib (name NRF)(type KiCad)(uri C:\moje\Projekty\Pilot_peugeot\PCBS\lib\packages\NRF.pretty)(options "")(descr ""))
-  (lib (name VSSOP)(type KiCad)(uri C:\moje\Projekty\Pilot_peugeot\PCBS\lib\packages\VSSOP.pretty)(options "")(descr ""))
-  (lib (name switches)(type KiCad)(uri C:\moje\Projekty\Pilot_peugeot\PCBS\lib\packages\switches.pretty)(options "")(descr ""))
-  (lib (name LEDs)(type KiCad)(uri C:\moje\Projekty\Pilot_peugeot\PCBS\lib\packages\LEDs.pretty)(options "")(descr ""))
-  (lib (name Diodes)(type KiCad)(uri C:\moje\Projekty\Pilot_peugeot\PCBS\lib\packages\Diodes.pretty)(options "")(descr ""))
-)
